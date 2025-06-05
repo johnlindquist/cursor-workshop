@@ -1,0 +1,254 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.actionBar {
+  margin-bottom: 2rem;
+}
+
+.addButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #2563eb;
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.form h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.formGroup input {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.formGroup input:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.submitButton {
+  background-color: #10b981;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #059669;
+}
+
+.cancelButton {
+  background-color: #6b7280;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #4b5563;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.productHeader {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.productHeader h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.sku {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.productDetails {
+  margin-bottom: 1.5rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.label {
+  color: #6b7280;
+}
+
+.value {
+  font-weight: 500;
+}
+
+.success {
+  color: #10b981;
+}
+
+.warning {
+  color: #f59e0b;
+}
+
+.danger {
+  color: #ef4444;
+}
+
+.productActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.adjustButton,
+.editButton {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.adjustButton:hover:not(:disabled),
+.editButton:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.adjustButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.editButton {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.editButton:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}

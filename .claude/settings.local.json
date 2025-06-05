@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(pnpm add:*)",
+      "Bash(npx nx g:*)",
+      "Bash(npx nx g:*)",
+      "Bash(npx nx g:*)",
+      "Bash(npx nx build:*)",
+      "Bash(npx nx build:*)",
+      "Bash(npx nx typecheck:*)",
+      "Bash(npx nx build:*)",
+      "Bash(npx nx serve:*)",
+      "Bash(npx nx serve:*)",
+      "Bash(npx nx show project:*)",
+      "Bash(npx nx serve:*)",
+      "Bash(npx nx dev:*)",
+      "Bash(npx nx dev:*)",
+      "Bash(curl:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(true)"
+    ],
+    "deny": []
+  }
+}

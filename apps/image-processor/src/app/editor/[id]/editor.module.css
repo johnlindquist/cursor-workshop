@@ -1,0 +1,131 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #444;
+}
+
+.backButton {
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.saveButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.saveButton:hover {
+  background-color: #0051cc;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.canvasContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #0a0a0a;
+  overflow: hidden;
+}
+
+.canvas,
+.previewCanvas {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.previewCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.processingOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.controls {
+  width: 300px;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  overflow-y: auto;
+  border-left: 1px solid #444;
+}
+
+.controls h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.controls h2:first-child {
+  margin-top: 0;
+}
+
+.filterGroup {
+  margin-bottom: 1.5rem;
+}
+
+.filterGroup label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.filterGroup input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.resetButton {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.resetButton:hover {
+  background-color: #555;
+}

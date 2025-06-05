@@ -1,0 +1,291 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.actionBar {
+  margin-bottom: 2rem;
+}
+
+.createButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: #2563eb;
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.form h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+.error {
+  background-color: #fee;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ef4444;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.itemsSection {
+  margin-bottom: 1.5rem;
+}
+
+.itemsSection h3 {
+  margin-bottom: 1rem;
+}
+
+.orderItemForm {
+  display: grid;
+  grid-template-columns: 1fr 100px auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.orderItemForm select {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.orderItemForm input {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.removeButton {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.removeButton:hover {
+  background-color: #dc2626;
+}
+
+.addItemButton {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addItemButton:hover {
+  background-color: #059669;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.submitButton {
+  background-color: #10b981;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #059669;
+}
+
+.cancelButton {
+  background-color: #6b7280;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #4b5563;
+}
+
+.ordersTable {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ordersTable h2 {
+  margin: 0 0 1.5rem 0;
+}
+
+.noOrders {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.ordersTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ordersTable th {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.ordersTable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ordersTable tr:hover {
+  background-color: #f9fafb;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status.pending {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status.processing {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status.fulfilled {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status.cancelled {
+  background-color: #fee;
+  color: #991b1b;
+}
+
+.statusSelect {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.statusSelect:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}

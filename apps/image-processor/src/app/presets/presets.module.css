@@ -1,0 +1,125 @@
+.presetsPage {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backButton {
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.createButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.createButton:hover {
+  background-color: #0051cc;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.presetCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.presetCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.presetHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.presetHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.deleteButton {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.deleteButton:hover {
+  color: #ff4444;
+}
+
+.presetDescription {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.filtersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filterTag {
+  padding: 0.25rem 0.75rem;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.applyButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.applyButton:hover {
+  background-color: #0051cc;
+}

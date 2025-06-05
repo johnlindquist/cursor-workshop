@@ -13,6 +13,10 @@
     ]
   },
   "nxCloudId": "68407f25f99d30716d73e4be",
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  },
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
@@ -27,6 +31,23 @@
           "watchDepsName": "watch-deps"
         }
       }
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
     }
-  ]
+  ],
+  "generators": {
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "none"
+      }
+    }
+  }
 }
