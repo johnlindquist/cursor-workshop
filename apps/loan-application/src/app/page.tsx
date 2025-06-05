@@ -42,6 +42,29 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
+      <section className="project-info-section">
+        <div className="container">
+          <div className="project-info">
+            <h2>AI-Driven Integration Testing Workshop</h2>
+            <p>
+              Learn how to use Cursor IDE and AI assistance to automatically implement Playwright 
+              integration tests for this complex multi-step loan application. The application features 
+              conditional logic and validation rules perfect for demonstrating AI-powered test generation.
+            </p>
+            <h3>Workshop Focus:</h3>
+            <ul>
+              <li><strong>Playwright Setup</strong>: Use AI to configure and implement end-to-end tests</li>
+              <li><strong>Test Generation</strong>: Let AI create comprehensive test scenarios automatically</li>
+              <li><strong>Edge Case Discovery</strong>: Use AI to identify and test edge cases you might miss</li>
+            </ul>
+            <p>
+              You'll use Cursor IDE to prompt AI for setting up Playwright, generating test suites, 
+              and creating robust integration tests—all through natural language conversations with AI.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="calculator-section">
         <div className="container">

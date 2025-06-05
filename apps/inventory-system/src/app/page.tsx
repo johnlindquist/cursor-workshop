@@ -28,6 +28,25 @@ export default function DashboardPage() {
           <Link href="/analytics">Analytics</Link>
         </nav>
       </header>
+      
+      <div className={styles.projectInfo}>
+        <h2>AI-Driven Logging Workshop</h2>
+        <p>
+          Learn how to use Cursor IDE and AI assistance to automatically implement comprehensive 
+          logging in a complex real-time inventory system. This application features concurrent 
+          operations and race conditions ideal for demonstrating AI-powered logging strategies.
+        </p>
+        <h3>Workshop Focus:</h3>
+        <ul>
+          <li><strong>AI-Generated Logging</strong>: Use Cursor to automatically add logging throughout the codebase</li>
+          <li><strong>Smart Log Placement</strong>: Let AI determine optimal logging points for debugging</li>
+          <li><strong>Structured Logging</strong>: Implement consistent log formats with AI assistance</li>
+        </ul>
+        <p>
+          You'll use Cursor IDE to prompt AI for implementing logging strategies, creating debug 
+          utilities, and setting up monitoring—all through conversational AI interactions.
+        </p>
+      </div>
 
       <main className={styles.main}>
         <div className={styles.statsGrid}>
